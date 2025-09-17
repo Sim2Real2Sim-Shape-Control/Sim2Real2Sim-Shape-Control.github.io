@@ -132,9 +132,7 @@ $(document).ready(function() {
     }
 
 	// Initialize all div with carousel class
-	var carousels = bulmaCarouse1.attach('results-carouse0', options);
-    var carousels = bulmaCarousel.attach('results-carouse1', options);
-	var carousels = bulmaCarouse1.attach('results-carouse2', options);
+    var carousels = bulmaCarousel.attach('.carousel', options);
 	
     bulmaSlider.attach();
     
