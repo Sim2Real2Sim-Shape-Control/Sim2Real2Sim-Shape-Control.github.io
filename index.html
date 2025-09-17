@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Sim2Real2Sim-Shape-Control">
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>Sim2Real2Sim-Shape-Control</title>
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -187,7 +187,52 @@
   </button>
 
   <!-- More Works Dropdown -->
- 
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -196,13 +241,13 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Sim2Real2Sim Shape Control Based on Volumetric Mesh Inspired Graph Neural Network</h1>
+            <h1 class="title is-1 publication-title">Academic Project Page</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
                   </span>
@@ -228,7 +273,16 @@
                       </a>
                     </span>
 
-                    
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
@@ -261,7 +315,21 @@
 
 
 <!-- Teaser video-->
-
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -273,7 +341,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-           In this study, we present a graph neural network (GNN)-based model predictive control (MPC) framework for the autonomous three-dimensional shaping of deformable objects, inspired by online finite element method (FEM) simulation. The proposed approach synchronizes the FEM simulation with a real robotic manipulator, applying the control signals generated in the simulation directly to the physical robot. Point cloud data acquired from the real object is then used to correct the simulated object’s shape, thereby maintaining consistency between simulation and reality. This real-to-sim registration process reduces the control performance’s sensitivity to inaccuracies in material parameters and mesh modeling inherent to FEM simulations. The GNN, designed with inspiration from simulated meshes, exhibits strong generalization capabilities, enabling a network trained on simulation-generated data to accurately predict object deformations in online, physically registered experiments. This property facilitates the convergence of MPC errors. To evaluate the proposed control strategy, we present a detailed experimental study on various deformable objects. The results demonstrate not only the superior performance of our controller but also its robustness across different materials. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
           </p>
         </div>
       </div>
@@ -287,7 +355,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carouse1" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
         <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
@@ -351,7 +419,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Ablation and Comparative Shape Control Experiments</h2>
+      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <!-- TODO: Add poster image for better preview -->
@@ -377,35 +445,6 @@
       </div>
     </div>
   </div>
-
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carouse1" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/banana_exp.png" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          Control errors and the point cloud correspondence rates of different experiments of the banana. The figure on the left and right illustrate the results of Experiment 1 and 2 respectively.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/intestine_exp.png" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Control errors and the point cloud correspondence rates of different experiments of the intestine. The figure on the left and right illustrate the results of Experiment 1 and 2 respectively.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/kidney_exp.png" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Control errors and the point cloud correspondence rates of different experiments of the kidney. The figure on the left and right illustrate the results of Experiment 1 and 2 respectively.
-       </h2>
-     </div>
-  </div>
-</div>
-</div>
 </section>
 <!-- End video carousel -->
 
