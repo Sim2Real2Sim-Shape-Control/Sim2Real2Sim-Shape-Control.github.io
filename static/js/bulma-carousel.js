@@ -2323,7 +2323,7 @@ var defaultOptions = {
   timing: 'ease',
 
   autoplay: false,
-  autoplaySpeed: 0,
+  autoplaySpeed: 3000,
   pauseOnHover: true,
   breakpoints: [{
     changePoint: 480,
